@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Augsburg Air Transport</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #002244;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        nav {
+            background-color: #001e3c;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: linear-gradient(to right, #001e3c, #005288);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        .section {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 1rem;
+        }
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #005288;
+            padding-bottom: 0.5rem;
+        }
+        .fleet-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .fleet-item {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .fleet-item:hover {
+            transform: scale(1.03);
+        }
+        .fleet-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .fleet-item div {
+            padding: 1rem;
+        }
+        .contact {
+            background-color: #002244;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #001e3c;
+            color: white;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Augsburg Air Transport</h1>
+        <p>Connecting Bavaria to the World</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#fleet">Fleet</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Welcome to Augsburg Air Transport</h2>
+        <p>We provide high-quality virtual charter and executive flight operations on VATSIM and IVAO.</p>
+    </section>
+    <section class="section" id="about">
+        <h2>About Us</h2>
+        <p>Augsburg Air Transport is a modern and dedicated virtual airline based in Southern Germany. Whether you're flying cargo, passengers, or just for fun – our fleet and staff are here to support your journey. We fly realistic procedures, use SimBrief for dispatching, and provide detailed liveries for your aircraft. Our mission is to build a tight-knit community for passionate virtual pilots.</p>
+    </section>
+    <section class="section" id="fleet">
+        <h2>Our Fleet</h2>
+        <div class="fleet-container">
+            <div class="fleet-item">
+                <img src="https://raw.githubusercontent.com/yourusername/yourrepo/main/cj4.png" alt="Citation CJ4">
+                <div>
+                    <h3>Cessna Citation CJ4</h3>
+                    <p>Our fast and efficient business jet for international executive charters. Registered as D-IAAT, it's the pride of our fleet.</p>
+                </div>
+            </div>
+            <div class="fleet-item">
+                <img src="https://raw.githubusercontent.com/yourusername/yourrepo/main/kingair.png" alt="King Air 350i">
+                <div>
+                    <h3>Beechcraft King Air 350i</h3>
+                    <p>Versatile and reliable, perfect for both passenger and cargo short-hauls across Europe.</p>
+                </div>
+            </div>
+            <div class="fleet-item">
+                <img src="https://raw.githubusercontent.com/yourusername/yourrepo/main/c172.png" alt="Cessna 172">
+                <div>
+                    <h3>Cessna 172 Skyhawk</h3>
+                    <p>Ideal for scenic flights, VFR navigation, and pilot training missions. Lightweight and iconic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>For inquiries, partnership requests or VATSIM/IVAO coordination, contact us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:vAAT@outlook.de" style="color: #00aced;">vAAT@outlook.de</a></p>
+    </section>
+    <div class="footer">
+        <p>&copy; 2025 Augsburg Air Transport. All rights reserved.</p>
+    </div>
+</body>
+</html>
