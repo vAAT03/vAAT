@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Augsburg Air Transport</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: linear-gradient(180deg, #0d0d0d, #1f1f1f);
+      color: #f2f2f2;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #111;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3.5rem;
+      color: #ffcc00;
+      animation: fadeIn 2s ease-out;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #000;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      color: #ffcc00;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+      animation: fadeIn 1s ease-in;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      color: #ffcc00;
+      margin-bottom: 20px;
+    }
+
+    .fleet-card {
+      background-color: #2c2c2c;
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 50px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .fleet-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .fleet-card:hover .fleet-image {
+      transform: scale(1.02);
+    }
+
+    .fleet-info {
+      padding: 25px;
+    }
+
+    .fleet-description {
+      font-size: 1.15rem;
+      color: #ddd;
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.95rem;
+      color: #777;
+    }
+
+    a {
+      color: #ffcc00;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Augsburg Air Transport</h1>
+    <p>Virtual Airline for MSFS2020, MSFS2024 and X-Plane</p>
+    <p><strong>ICAO:</strong> AAT &nbsp; | &nbsp; <strong>Callsign:</strong> Augsburg Air</p>
+  </header>
+
+  <nav>
+    <a href="#fleet">Fleet</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="fleet">
+    <h2>Our Fleet</h2>
+
+    <div class="fleet-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Beechcraft_King_Air_350i_%28cropped%29.jpg" alt="King Air 350i" class="fleet-image" />
+      <div class="fleet-info">
+        <h3>Beechcraft King Air 350i (D-IMML)</h3>
+        <p class="fleet-description">
+          Our turbocharged workhorse. The King Air 350i delivers power, class, and trust. Ideal for mountain runs, business hops, or just a scenic flight – she gets the job done, every time.
+        </p>
+      </div>
+    </div>
+
+    <div class="fleet-card">
+      <img src="https://images.unsplash.com/photo-1592861956120-9aa57f4443a7" alt="Cessna CJ4" class="fleet-image" />
+      <div class="fleet-info">
+        <h3>Cessna Citation CJ4</h3>
+        <p class="fleet-description">
+          Our flagship jet. The CJ4 is all about efficiency, speed, and tech. Glide through the skies in comfort and style – whether you're heading to Scandinavia or the Alps.
+        </p>
+      </div>
+    </div>
+
+    <div class="fleet-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Cessna_172S_Skyhawk_SP%2C_Private_JP6383743.jpg" alt="Cessna 172" class="fleet-image" />
+      <div class="fleet-info">
+        <h3>Cessna 172 Skyhawk</h3>
+        <p class="fleet-description">
+          The trainer. The icon. The Skyhawk. Explore, learn, and enjoy VFR flying with this stable and legendary aircraft.
+        </p>
+      </div>
+    </div>
+
+    <div class="fleet-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Citation_CJ3%2B_%2833356353881%29.jpg" alt="Citation CJ3+" class="fleet-image" />
+      <div class="fleet-info">
+        <h3>Cessna Citation CJ3+</h3>
+        <p class="fleet-description">
+          The CJ3+ is a perfect mix of range and agility. From regional hops to executive missions, it’s got the avionics, cabin, and climb power to handle it all with style.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p class="fleet-description">
+      We’re not your typical virtual airline. At Augsburg Air Transport, we fly because we love it. No real-world ops, no rigid procedures – just chill flights, stunning views, and fun missions in MSFS2020, MSFS2024, and X-Plane. 
+      Whether you're practicing IFR in the CJ4, sightseeing in the 172, or cruising above the clouds in a CJ3+, there’s a place for you with us.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="fleet-description">
+      Got questions? Want to fly with us? Reach out anytime.<br><br>
+      <strong>Email:</strong> <a href="mailto:vAAT@outlook.de">vAAT@outlook.de</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Augsburg Air Transport. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
